@@ -4,33 +4,34 @@
  * and imports for stencil collections that might be configured in your stencil.config.js file
  */
 
-import '@stencil/router';
+import { Signature as StSignature } from './components/st-signature/st-signature';
 
-import { MyName as MyName } from './components/my-name/my-name';
-
-interface HTMLMyNameElement extends MyName, HTMLElement {
+interface HTMLStSignatureElement extends StSignature, HTMLElement {
 }
-declare var HTMLMyNameElement: {
-  prototype: HTMLMyNameElement;
-  new (): HTMLMyNameElement;
+declare var HTMLStSignatureElement: {
+  prototype: HTMLStSignatureElement;
+  new (): HTMLStSignatureElement;
 };
 declare global {
   interface HTMLElementTagNameMap {
-      "my-name": HTMLMyNameElement;
+      "st-signature": HTMLStSignatureElement;
   }
   interface ElementTagNameMap {
-      "my-name": HTMLMyNameElement;
+      "st-signature": HTMLStSignatureElement;
   }
   namespace JSX {
       interface IntrinsicElements {
-          "my-name": JSXElements.MyNameAttributes;
+          "st-signature": JSXElements.StSignatureAttributes;
       }
   }
   namespace JSXElements {
-      export interface MyNameAttributes extends HTMLAttributes {
+      export interface StSignatureAttributes extends HTMLAttributes {
         
-          first?: any,
-          last?: any
+          getSignatureImage?: any,
+          label?: string,
+          width?: number,
+          height?: number,
+          callback?: any
       }
   }
 }

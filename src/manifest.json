@@ -1,6 +1,6 @@
 {
-  "name": "Stencil Starter",
-  "short_name": "Stencil",
+  "name": "st-signature",
+  "short_name": "st-signature",
   "start_url": "/",
   "display": "standalone",
   "icons": [{

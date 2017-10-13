@@ -1,0 +1,20 @@
+.signature-area {
+  color: #ff6600;
+
+  .signature-clear {
+    float: left;
+    width: 88px;
+    height: 32px;
+    border: solid 2px #fff;
+    cursor: pointer;
+  }
+
+  .signature-accept {
+    float: left;
+    width: 88px;
+    height: 32px;
+    border: solid 2px #fff;
+    background-color: #ff6600;
+    cursor: pointer;
+  }
+}
