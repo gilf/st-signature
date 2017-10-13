@@ -3,6 +3,7 @@
 # st-signature
 
 st-signature is simple [Stencil](https://stenciljs.com/) component that enables the user to sign on screen and to get the bitmap of the signature.
+The component is based on an article I wrote a few years ago: [Building a Signature Control Using Canvas](https://www.codeproject.com/Articles/432675/Building-a-Signature-Control-Using-Canvas).
 
 ## Getting Started
 
